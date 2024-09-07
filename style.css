@@ -76,3 +76,59 @@ body {
   color: var(--color-primary);
 }
 /* end of header stylings */
+
+/* hero stylings */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(./images/hero-bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.hero__textbox {
+  text-align: center;
+  width: 60%;
+}
+
+@media screen and (max-width: 56.25em) {
+  .hero__textbox {
+    width: 90%;
+  }
+}
+
+.hero__title {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 7rem;
+  letter-spacing: 3px;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 46.875em) {
+  .hero__title {
+    font-size: 5rem;
+  }
+}
+
+.hero__link {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem 2.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 100px;
+}
+/* end of hero stylings */
