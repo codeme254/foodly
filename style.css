@@ -19,12 +19,32 @@ html {
   --color-quaternary: #33372c;
   --color-black: #333;
   --color-white: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
   color: var(--color-black);
+}
+
+.scroll-to-top {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  display: block;
+  background-color: var(--color-tertiary);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-white);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 10000000;
 }
 
 .title {
