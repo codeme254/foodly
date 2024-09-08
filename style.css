@@ -372,3 +372,80 @@ body {
   font-size: 2.5rem;
 }
 /* end of the chefs section */
+
+/* testimonies section styling */
+.testimonies-section {
+  margin-top: 10rem;
+}
+
+.testmonies-section-container {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.video {
+  width: 45%;
+}
+
+.testimonies {
+  width: 55%;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 50em) {
+  .testmonies-section-container {
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .testimonies {
+    width: 100%;
+  }
+}
+
+.video__vid {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.testimony {
+  width: 30rem;
+  padding: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.testimony__text {
+  line-height: 1.5;
+  color: #555;
+}
+
+.testimony__customer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.testimony__customer-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.testimony__customer-name {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+/* end of testimonies section styling */
